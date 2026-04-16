@@ -1,0 +1,47 @@
+{
+  "name": "Operator Colorizer Pro",
+  "type": "dark",
+  "colors": {},
+  "tokenColors": [
+    {
+      "name": "Arithmetic Operators (+, -, *, /, %)",
+      "scope": "keyword.operator.arithmetic.colorizer",
+      "settings": {
+        "foreground": "#FF9D00",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Comparison Operators (==, !=, >=, <=)",
+      "scope": "keyword.operator.comparison.colorizer",
+      "settings": {
+        "foreground": "#00D4FF",
+        "fontStyle": "bold italic"
+      }
+    },
+    {
+      "name": "Logical Operators (&&, ||, !)",
+      "scope": "keyword.operator.logical.colorizer",
+      "settings": {
+        "foreground": "#00FF88",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Assignment Operators (=, +=, -=)",
+      "scope": "keyword.operator.assignment.colorizer",
+      "settings": {
+        "foreground": "#FF6B9D",
+        "fontStyle": "bold italic"
+      }
+    },
+    {
+      "name": "Bitwise Operators (&, |, ^, ~)",
+      "scope": "keyword.operator.bitwise.colorizer",
+      "settings": {
+        "foreground": "#C792EA",
+        "fontStyle": "bold"
+      }
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "name": "operator-colorizer",
+  "displayName": "Operator Colorizer Pro",
+  "description": "Colors operators in all programming languages",
+  "version": "1.0.0",
+  "publisher": "mdange",
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/manish780386/operator-colorizer.git"
+},
+"license": "MIT",
+  "engines": { "vscode": "^1.74.0" },
+  "categories": ["Themes", "Other"],
+  "activationEvents": ["onStartupFinished"],
+  "contributes": {
+    "grammars": [
+      {
+        "scopeName": "operator.colorizer.injection",
+        "path": "./syntaxes/operators.tmLanguage.json",
+        "injectTo": [
+          "source.js", "source.ts", "source.py", "source.java",
+          "source.cpp", "source.c", "source.cs", "source.go",
+          "source.rs", "source.php", "source.rb", "source.swift",
+          "source.kotlin", "source.r", "source.lua", "source.dart",
+          "source.sql", "source.html", "source.css", "source.json"
+        ]
+      }
+    ],
+    "themes": [
+      {
+        "label": "Operator Colorizer Pro",
+        "uiTheme": "vs-dark",
+        "path": "./themes/operator-colorizer-color-theme.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "operator-colorizer.toggle",
+        "title": "Operator Colorizer: Toggle ON/OFF"
+      },
+      {
+        "command": "operator-colorizer.showStats",
+        "title": "Operator Colorizer: Show Operator Stats"
+      },
+      {
+        "command": "operator-colorizer.customizeColors",
+        "title": "Operator Colorizer: Customize Colors"
+      }
+    ],
+    "configuration": {
+      "title": "Operator Colorizer Pro",
+      "properties": {
+        "operatorColorizer.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable/Disable Operator Colorizer"
+        },
+        "operatorColorizer.arithmeticColor": {
+          "type": "string",
+          "default": "#FF9D00",
+          "description": "Color for arithmetic operators (+, -, *, /, %)"
+        },
+        "operatorColorizer.comparisonColor": {
+          "type": "string",
+          "default": "#00D4FF",
+          "description": "Color for comparison operators (==, !=, >=, <=)"
+        },
+        "operatorColorizer.logicalColor": {
+          "type": "string",
+          "default": "#00FF88",
+          "description": "Color for logical operators (&&, ||, !)"
+        },
+        "operatorColorizer.assignmentColor": {
+          "type": "string",
+          "default": "#FF6B9D",
+          "description": "Color for assignment operators (=, +=, -=)"
+        },
+        "operatorColorizer.bitwiseColor": {
+          "type": "string",
+          "default": "#C792EA",
+          "description": "Color for bitwise operators (&, |, ^, ~)"
+        },
+        "operatorColorizer.boldStyle": {
+          "type": "boolean",
+          "default": true,
+          "description": "Bold style for operators"
+        },
+        "operatorColorizer.italicStyle": {
+          "type": "boolean",
+          "default": false,
+          "description": "Italic style for operators"
+        }
+      }
+    }
+  },
+  "main": "./out/extension.js",
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^16.0.0",
+    "@types/vscode": "^1.74.0",
+    "typescript": "^5.0.0"
+  }
+}
