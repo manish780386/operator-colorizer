@@ -2,7 +2,7 @@
   "name": "operator-colorizer",
   "displayName": "Operator Colorizer Pro",
   "description": "Colors operators in all programming languages",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "mdange",
   "repository": {
   "type": "git",
