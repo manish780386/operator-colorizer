@@ -6,9 +6,9 @@
   "publisher": "mdange",
   "repository": {
   "type": "git",
-  "url": "https://github.com/manish780386/operator-colorizer.git"
+  "url": "https://github.com/manish780386/operator-colorizer"
 },
-"license": "MIT",
+  "license": "MIT",
   "engines": { "vscode": "^1.74.0" },
   "categories": ["Themes", "Other"],
   "activationEvents": ["onStartupFinished"],

@@ -1,6 +1,6 @@
 {
   "scopeName": "operator.colorizer.injection",
-  "injectionSelector": "L:source",
+  "injectionSelector": "L:source -comment -string",
   "patterns": [
     { "include": "#arithmetic" },
     { "include": "#comparison" },
@@ -11,19 +11,19 @@
   "repository": {
     "arithmetic": {
       "name": "keyword.operator.arithmetic.colorizer",
-      "match": "(?<![=<>!])([+\\-*/%])(?!=)"
+      "match": "(?<![=<>!\\-+*/%&|^])([+\\-*/%])(?![=+\\-*/%&|^])"
     },
     "comparison": {
       "name": "keyword.operator.comparison.colorizer",
-      "match": "(===|!==|==|!=|>=|<=|=>|>(?!>)|<(?!<))"
+      "match": "(===|!==|==|!=|>=|<=|<(?!<)|>(?!>))"
     },
     "logical": {
       "name": "keyword.operator.logical.colorizer",
-      "match": "(&&|\\|\\||!(?!=)|\\?\\?)"
+      "match": "(and|or|not|&&|\\|\\||!(?!=)|\\?\\?)"
     },
     "assignment": {
       "name": "keyword.operator.assignment.colorizer",
-      "match": "(\\+=|-=|\\*=|/=|%=|=(?!=))"
+      "match": "(\\+=|-=|\\*=|/=|%=|\\*\\*=|//=|=(?![=>]))"
     },
     "bitwise": {
       "name": "keyword.operator.bitwise.colorizer",
