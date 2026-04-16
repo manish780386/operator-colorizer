@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Operator Colorizer Pro 🎨
 
 Colors all operators in every programming language!
@@ -25,3 +26,6 @@ JavaScript, TypeScript, Python, Java, C++, C, C#, Go, Rust, PHP, Ruby, Swift, Ko
 - `Operator Colorizer: Toggle ON/OFF` — Enable/disable
 - `Operator Colorizer: Show Operator Stats` — Count operators in file
 - `Operator Colorizer: Customize Colors` — Change operator colors
+=======
+# operator-colorizer
+>>>>>>> 72ad655a9e7c76340c1d7628c0533fa8e14da0cf
