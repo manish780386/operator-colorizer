@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Operator Colorizer Pro 🎨
 
 Colors all operators in every programming language!
